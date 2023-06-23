@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "819945536484",
+    "project_id": "we-learn-app-baad9",
+    "storage_bucket": "we-learn-app-baad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819945536484:android:bacec003f9bd167c94a5f1",
+        "android_client_info": {
+          "package_name": "com.example.we_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819945536484-ueforr8b176rk9ch28gmsmcna937m0h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX5O03v2Yp2uRjKA_zuC_kO9m3bCBbWzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819945536484-ueforr8b176rk9ch28gmsmcna937m0h7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "819945536484-s57j4t9gk5743ir089j1ieun5ig8br26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "we-learn-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
