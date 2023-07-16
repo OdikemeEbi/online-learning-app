@@ -6,6 +6,8 @@ import 'package:we_learn/home/bloc/home_page_blocs.dart';
 import 'package:we_learn/home/homePage.dart';
 import 'package:we_learn/pages/application/application_page.dart';
 import 'package:we_learn/pages/application/bloc/app_blocs.dart';
+import 'package:we_learn/pages/course/bloc/course_detail.dart';
+import 'package:we_learn/pages/course/bloc/course_detail_bloc.dart';
 import 'package:we_learn/pages/profile/widgets/settngs/bloc/settings_bloc.dart';
 import 'package:we_learn/pages/profile/widgets/settngs/settings.page.dart';
 import 'package:we_learn/pages/register/bloc/register_bloc.dart';
@@ -42,7 +44,7 @@ class AppPages {
           route: AppRoutes.APPLICATION,
           page: const ApplicationPage(),
           bloc: BlocProvider(
-            create: (_) => AppBolcs(),
+            create: (_) => AppBlocs(),
           )),
       PageEntity(
           route: AppRoutes.HOME_PAGE,
@@ -55,6 +57,12 @@ class AppPages {
           page: const SettingsPage(),
           bloc: BlocProvider(
             create: (_) => SettingBlocs(),
+          )),
+      PageEntity(
+          route: AppRoutes.COURSE_DETAIL,
+          page: const CourseDetail(),
+          bloc: BlocProvider(
+            create: (_) => CourseDetailBlocs(),
           ))
     ];
   }

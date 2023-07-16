@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:we_learn/pages/common_widget.dart';
 import 'package:we_learn/pages/register/bloc/register_bloc.dart';
 import 'package:we_learn/pages/register/bloc/register_controller.dart';
 import 'package:we_learn/pages/register/bloc/register_event.dart';
 import 'package:we_learn/pages/register/bloc/register_state.dart';
+import 'package:we_learn/pages/signin/widgets/sign_in_widget.dart';
+
+// import '../../common/entities/widgets/base_text_widget.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});

@@ -50,7 +50,10 @@ Widget _reuseableIcons(String iconName) {
   );
 }
 
-Widget reuseableText(String text) {
+Widget reuseableText(String text,
+    {required Color color,
+    required int fontSize,
+    required FontWeight fontWeight}) {
   return Container(
     margin: EdgeInsets.only(bottom: 5.h),
     child: Text(

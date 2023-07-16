@@ -5,8 +5,7 @@ import 'package:we_learn/pages/signin/bloc/sign_in_blocs.dart';
 import 'package:we_learn/pages/signin/bloc/sign_in_events.dart';
 import 'package:we_learn/pages/signin/bloc/sign_in_state.dart';
 import 'package:we_learn/pages/signin/sign_in_controller.dart';
-// import 'package:we_learn/pages/signin/widgets/sign_in_widget.dart';
-import 'package:we_learn/pages/common_widget.dart';
+import 'package:we_learn/pages/signin/widgets/sign_in_widget.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});

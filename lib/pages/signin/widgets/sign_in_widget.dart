@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:we_learn/common/entities/value/colors.dart';
 
-AppBar buildAppBar() {
+AppBar buildAppBar(String s) {
   return AppBar(
     centerTitle: true,
     bottom: PreferredSize(

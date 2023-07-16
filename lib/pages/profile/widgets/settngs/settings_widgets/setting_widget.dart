@@ -9,7 +9,7 @@ AppBar buildAppbars() {
     title: Container(
       child: Container(child: reuseableText('Setting')),
     ),
-  ); 
+  );
 }
 
 // SETTINGS BUTTON

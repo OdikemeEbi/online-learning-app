@@ -18,7 +18,7 @@ class _ApplicationPageState extends State<ApplicationPage> {
   int _index = 0;
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AppBolcs, AppState>(builder: (context, state) {
+    return BlocBuilder<AppBlocs, AppState>(builder: (context, state) {
       return Container(
         color: Colors.white,
         child: SafeArea(
@@ -49,7 +49,7 @@ class _ApplicationPageState extends State<ApplicationPage> {
                 elevation: 0,
                 currentIndex: state.index,
                 onTap: (value) {
-                  context.read<AppBolcs>().add(TriggerAppEvent(value));
+                  context.read<AppBlocs>().add(TriggerAppEvent(value));
                   print(value);
                 },
                 items: bottomTabs),

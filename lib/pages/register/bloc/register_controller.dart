@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:we_learn/common/entities/value/constant.dart';
 import 'package:we_learn/common/entities/widgets/flutter_toast.dart';
 import 'package:we_learn/pages/register/bloc/register_bloc.dart';
 
@@ -45,6 +46,9 @@ class RegisterController {
       if (credential.user != null) {
         await credential.user?.sendEmailVerification();
         await credential.user?.updateDisplayName(userName);
+        String photoUrl = "uploads/default.jpg";
+        await credential.user?.updatePhotoURL(photoUrl);
+        print("My photo url ${photoUrl.toString()}");
 
         toastInfo(
             msg:
